@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/profiles.css">
+    <title> {{ name }} | Profile</title>
+  </head>
+  <body id=profile>
+    <div id=main>
+      <div id=bg>
+    </div>
+    <div id=second>
+    <h1>{{ name }}</h1>
+    <p class="profileInfo">Graduated from {{ highschool }}.</p>
+    <p class="profileInfo">Will be going to {{ college }}.</p>
+    <p class="profileInfo"> Connect: {{ email }} </p>
+    <button class="schoolButtons" type="button" onclick="window.location.href='/college?collat={{collat}}&email={{email}}&college={{college}}'">Colleges</button>
+    <br>
+    <button class="schoolButtons" type="button" onclick="window.location.href='/highschool?hslat={{hslat}}&email={{email}}&highschool={{highschool}}'">Highschool</button>
+    <br>
+    <button class="schoolButtons" type="button" onclick="window.location.href='/map'">View Map</button>
+    <br>
+    <br>
+    <br>
+    <button class="schoolButtons" type="button" onclick="window.location.href='/'">Continue my Freshman 15 later --> </button>
+  <!-- <a href="/login">Continue my Freshman 15 later --> </a>
+  </div>
+</div>
+    <br>
+  </body>
+</html>
